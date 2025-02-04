@@ -14,7 +14,7 @@ class Secant{
     double secant(double x1, double x2){
         cout << x1 << " " << x2 << endl;
         double root;
-        while (abs(x1 - x2) > dif) {
+        while (abs(x2 - x1) > dif) {
             root = (x1 * f(x2) - x2 * f(x1)) / (f(x2) - f(x1));
           //  cout << root << endl;
             x1 = x2;
